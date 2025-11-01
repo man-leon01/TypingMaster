@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  color: white;
+  background: #121213;
+  height: 100vh;
+  /* width: 100%; */
+  font-family: "Montserrat", Sans-Serif;
+  overflow: hidden;
+}
+
+.game-container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1rem;
+  padding: 0.3rem;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 1.2rem;
+  /* font-family: "Anton", Sans-Serif; */
+  letter-spacing: 1px;
+}
+
+.links{
+  display: flex;
+}
+
+a{
+  text-decoration: none;
+  color: #f3f3f3;
+  font-weight: 800;
+}
+
+a.active{
+  border-bottom: 1px solid #ab12f2;
+  padding-bottom: 3px;
+  font-weight: 400;
+}
+
+#play{
+  display: none;
+}
+
+.game{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+  gap: 1rem;
+  width: 80%;
+  max-width: 450px;
+}
+
+.game input{
+  flex: 1;
+  padding: .8rem .6rem;
+  border: none;
+  border-radius: .6rem;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+button{
+  border: none;
+  background: #ab12f2;
+  padding: .6rem;
+  color: #f1f1f1;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+.game p{
+  text-align: center;
+  font-weight: 400;
+}
+
+.game #random-word{
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+h2, p{
+  line-height: 1.5;
+}
+
+p{
+  font-size: .9rem;
+}
+
+h2{
+  font-size: 1.3rem;
+}
+
+.notif{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  transform: scale(0);
+  transition: all .5s ease;
+}
+
+.notif.active{
+  transform: scale(1);
+}
+
+.end{
+  background: #252525;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  position: absolute;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 1px 1px 10px 2px #ab12f2;
+  margin: 0 auto;
+  transform: scale(0);
+  transition: all .5s ease-in;
+  border-radius: 6px;
+}
+
+.help{
+  width: 80%;
+  max-width: 550px;
+  transform: scale(0);
+  text-align: justify;
+  padding: 1rem;
+  transition: all .5s ease-in;
+}
+
+.help.act{
+  transform: scale(.9);
+  transition: all .5s ease;
+}
+
+#help-btn{
+  text-align: end;
+  font-weight: 800;
+  width: 80%;
+  margin: 0 auto 5rem;
+  cursor: pointer;
+}
+
+.end.active{
+  transform: scale(.9);
+  transition: all .5s ease-in;
+}
+
+.end p{
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.end button{
+  width: 60%;
+}
+
+
+.about-container{
+  background: #000;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  transform: translateY(100%);
+  transition: all .5s ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  z-index: 2;
+  top: 0;
+  overflow-y: auto;
+}
+
+.about-container.active{
+  transform: translateY(0%);
+  transition: all .5s ease;
+}
+
+.about-container>img{
+  margin-top: 4rem;
+  width: 40%;
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+.about-me{
+  padding: 1rem 1.5rem;
+  font-size: .85rem;
+  text-align: justify;
+  width: 80%;
+}
+
+.networks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 90%;
+}
+
+.networks img{
+  width: 40px;
+  background: #121212;
+  border-radius: 50%;
+}

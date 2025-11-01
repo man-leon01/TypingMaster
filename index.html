@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="./images/profil.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Master</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+  <body>
+    <div class="game-container">
+    <nav>
+      <div class="title">Typing Master</div>
+      <div class="links">
+        <a href="#" class="active" id="about">About me</a>
+        <a href="#" id="play">Play</a>
+      </div>
+    </nav>
+    <div class="game">
+    <p id="timer">Timer : 120s</p>
+    <p id="random-word"></p>
+    <input type="text" placeholder="Entre le mot..." id="word">
+    <button id="restart">Start</button>
+    </div>
+    <div id="help-btn">Help ?</div>
+  </div>
+  <div class="notif">
+    <div class="end">
+      <h2>Jeu terminé</h2>
+      <!-- <p id="score">Votre score est : 200 points</p> -->
+      <p id="score"></p>
+      <button id="restart">Restart</button>
+    </div>
+    <div class="help end">
+      <h2>Comment fonctionne le jeu ?</h2>
+      <p>Bienvenue sur ce jeu nommé "Typing Master". Le jeu consiste à ce que le joueur tape correctement le plus de mots possible en un temps donné.
+        Chaque mot bien tapé rapporte 10 points, mettant à l’épreuve la rapidité et la précision du joueur. Bonne chance !!!</p>
+        <button id="continued">Continue</button>
+    </div>
+  </div>
+    <div class="about-container">
+        <img src="./images/profil.png">
+      <div class="about-me">
+        Je suis un développeur web junior, passionné par la création des sites web d’expériences interactives et dynamiques.
+      Je maîtrise les technologies HTML, CSS, JavaScript, Python et autres..., que j’utilise pour concevoir des projets à la fois interactifs et fonctionnels.
+        <hr>
+        Récemment, j’ai développé un jeu appelé "Typing Master", un jeu de vitesse où le joueur doit taper correctement le plus de mots possible en un temps donné.
+        Chaque mot bien tapé rapporte 10 points, mettant à l’épreuve la rapidité et la précision du joueur.
+
+        Je suis toujours en quête de nouveaux défis pour continuer à apprendre, améliorer mes compétences et créer des projets utiles ou divertissants.
+      </div>
+      <div class="networks">
+        <a href="https://github.com/man-leon01" target="_blank">
+          <img src="./images/github.png"/>
+        </a>
+        <a href="https://www.linkedin.com/in/komi-l%C3%A9on-adjavoe-144455347/" target="_blank">
+          <img src="./images/linkedin.png"/>
+        </a>
+      </div>
+      <p>Tous droits reservés - <a href="https://github.com/man-leon01" target="_blank">man-leon01</a></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
